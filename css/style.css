@@ -5,6 +5,21 @@
 .custom_container {
 	padding: 0 80px;
 }
+@media (max-width: 992px) {
+	.custom_container {
+		padding: 0 50px;
+	}
+}
+@media (max-width: 767px) {
+	.custom_container {
+		padding: 0 30px;
+	}
+}
+@media (max-width: 479px) {
+	.custom_container {
+		padding: 0 20px;
+	}
+}
 input:focus,
 textarea:focus {
 	outline: none;
@@ -28,7 +43,7 @@ textarea:focus {
 }
 .home_btn-up {
 	font-size: 35px;
-	padding-left: 10px;
+	margin-left: 10px;
 	transition: all 0.5s ease;
 }
 .title {
@@ -61,7 +76,9 @@ textarea:focus {
 header {
 	display: flex;
 	justify-content: space-between;
+	max-height: 120px;
 }
+
 .logo_wrap {
 	display: flex;
 	align-items: center;
@@ -74,26 +91,66 @@ header {
 	line-height: 15px;
 	text-transform: uppercase;
 }
+
 .logo_text > span {
 	font-weight: 700;
+}
+@media (max-width: 992px) {
+	.logo_text,
+	.logo_text > span {
+		font-size: 18px;
+		line-height: 1;
+	}
+}
+@media (max-width: 767px) {
+	.logo_text,
+	.logo_text > span {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+}
+@media (max-width: 479px) {
+	.logo_text,
+	.logo_text > span {
+		font-size: 28px;
+		line-height: 1.4;
+	}
 }
 .nav {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
+
 .nav_list {
 	display: flex;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	flex-wrap: wrap;
 }
 .nav_item {
 	padding: 0 25px;
 	opacity: 0.8;
 	transition: opacity 0.3s ease;
 }
-.footer_nav_item_margin-none {
+.nav_item:last-child {
 	padding-right: 0;
+}
+@media (max-width: 992px) {
+	.nav_item > a {
+		font-size: 18px;
+	}
+}
+@media (max-width: 767px) {
+	.nav_item > a {
+		font-size: 24px;
+	}
+}
+@media (max-width: 479px) {
+	.nav_item > a {
+		font-size: 28px;
+	}
 }
 .nav_item:hover {
 	opacity: 1;
@@ -103,6 +160,7 @@ header {
 	font-weight: 600;
 }
 .promo_sign button {
+	margin-left: 25px;
 	padding: 6px 20px;
 	background-color: transparent;
 	border-radius: 2px;
@@ -110,6 +168,21 @@ header {
 	color: #ffffff;
 	font-size: 12px;
 	transition: all 0.3s ease;
+}
+@media (max-width: 992px) {
+	.promo_sign button {
+		font-size: 18px;
+	}
+}
+@media (max-width: 767px) {
+	.promo_sign button {
+		font-size: 24px;
+	}
+}
+@media (max-width: 479px) {
+	.promo_sign button {
+		font-size: 28px;
+	}
 }
 .promo_content {
 	display: flex;
