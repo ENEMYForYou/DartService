@@ -1096,7 +1096,9 @@ footer {
 	background-color: rgba(0, 0, 0, 0.6);
 	justify-content: center;
 	align-items: center;
+	z-index: 5;
 }
+
 .popup_active {
 	display: flex;
 }
